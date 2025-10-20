@@ -1,9 +1,16 @@
 # About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+このサイトはてうあのブログです！不定期で投稿します。
+[TeuaUDServer](https://tuds.jp)というサーバーも運営しているのでよかったら参加してね！
 
-::github{repo="saicaca/fuwari"}
+各種リンク
+> - [X (旧Twitter)](https://x.com/teuagg)
+> - [Twitch](https://twitch.tv/teuafps) 
+> - [Youtube](https://www.youtube.com/@%E3%81%A6%E3%81%86%E3%81%82)
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+TeuaUDServer
+> - [公式サイト](https://tuds.jp)
+> - [公式X](https://x.com/TeuaUDServer)
+> - [公式Youtube](https://www.youtube.com/@TeuaUDServer)
+> - [JapanMinecraftServers](https://minecraft.jp/servers/68d80fc5ecf70b9452000000)
+> - [Mineportal](https://mineportal.jp/servers/cmgi1ubo90000mebocb5hudee)
+> - [マップ](http://pureno.top:8100/)

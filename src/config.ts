@@ -46,7 +46,7 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.About,
 		{
 			name: "X (Twitter)",
-			url: "https://x.com/teuafps", // Internal links should not include the base path, as it is automatically added
+			url: "https://x.com/teuagg", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
 	],
@@ -62,7 +62,7 @@ export const profileConfig: ProfileConfig = {
 			icon: "fa6-brands:x-twitter", // Visit https://icones.js.org/ for icon codes
 			// You will need to install the corresponding icon set if it's not already included
 			// `pnpm add @iconify-json/<icon-set-name>`
-			url: "https://x.com/teuafps",
+			url: "https://x.com/teuagg",
 		},
 		{
 			name: "Twitch",
