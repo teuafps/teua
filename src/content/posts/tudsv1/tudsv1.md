@@ -1,7 +1,7 @@
 ---
-title: tudsv1.md
+title: TeuaUDServer / 都市開発鯖の紹介！
 published: 2025-10-20
-description: 'TeuaUDServer / 都市開発鯖の紹介！'
+description: '僕が最近開いたサーバーのTeuaUDServerについて紹介！'
 image: './cover.png'
 tags: ["Minecraft","Server","tuds"]
 category: 'tuds'
