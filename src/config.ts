@@ -59,14 +59,14 @@ export const profileConfig: ProfileConfig = {
 	links: [
 		{
 			name: "X (Twitter)",
-			icon: "fa7-brands:x-twitter", // Visit https://icones.js.org/ for icon codes
+			icon: "fa6-brands:x-twitter", // Visit https://icones.js.org/ for icon codes
 			// You will need to install the corresponding icon set if it's not already included
 			// `pnpm add @iconify-json/<icon-set-name>`
 			url: "https://x.com/teuafps",
 		},
 		{
 			name: "Twitch",
-			icon: "fa7-brands:twitch",
+			icon: "fa6-brands:twitch",
 			url: "https://twitch.tv/teuafps",
 		},
 		{
