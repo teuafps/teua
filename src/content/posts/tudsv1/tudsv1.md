@@ -37,3 +37,7 @@ TeuaUDServerは単なる建築サーバーではなく、**「自分だけの街
 
 [公式サイト](https://tuds.jp)
 [サーバーDiscordはこちら](https://discord.gg/6urNmarNNA)
+
+<iframe width="100%" height="468" src="https://www.youtube.com/embed/5gIf0_xpFPI?si=HUyjFet5jPY" title="[Minecraft]最近出来た神サーバーを紹介！#マイクラ #minecraft" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="100%" height="468" src="https://www.youtube.com/embed/5gIf0_xpFPI?si=FgeSBrAb8mQ" title="最近できたサーバーのtudsサーバーが短時間でどれくらい変わったかみて見た[minecraft]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
