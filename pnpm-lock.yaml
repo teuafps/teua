@@ -41,6 +41,9 @@ importers:
       '@fontsource/ibm-plex-sans-jp':
         specifier: ^5.2.8
         version: 5.2.8
+      '@fontsource/noto-sans-jp':
+        specifier: ^5.2.8
+        version: 5.2.8
       '@fontsource/roboto':
         specifier: ^5.2.8
         version: 5.2.8
@@ -1097,6 +1100,9 @@ packages:
 
   '@fontsource/ibm-plex-sans-jp@5.2.8':
     resolution: {integrity: sha512-ULgJLBVJEBIKBddVFla4PiOCHM4a7wjThS9FtMbmc9YehcYmnuMtF8/mi9ItZobHpQGwChzF/7ujoUTs+cYbZw==}
+
+  '@fontsource/noto-sans-jp@5.2.8':
+    resolution: {integrity: sha512-ngWXPtSV3XH8ZmNX9hnfeQ+x/3mCoaAOA3BVDcyS5jQdh4FYqKjf/S9tEUEYDPwGa2pULJVXTO2+oFg42gWvSw==}
 
   '@fontsource/roboto@5.2.8':
     resolution: {integrity: sha512-oh9g4Cg3loVMz9MWeKWfDI+ooxxG1aRVetkiKIb2ESS2rrryGecQ/y4pAj4z5A5ebyw450dYRi/c4k/I3UBhHA==}
@@ -6278,6 +6284,8 @@ snapshots:
   '@fontsource-variable/noto-sans-jp@5.2.9': {}
 
   '@fontsource/ibm-plex-sans-jp@5.2.8': {}
+
+  '@fontsource/noto-sans-jp@5.2.8': {}
 
   '@fontsource/roboto@5.2.8': {}
 
