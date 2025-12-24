@@ -1,6 +1,7 @@
 import type {
 	ExpressiveCodeConfig,
 	LicenseConfig,
+	MusicConfig,
 	NavBarConfig,
 	ProfileConfig,
 	SiteConfig,
@@ -30,12 +31,11 @@ export const siteConfig: SiteConfig = {
 		depth: 2, // Maximum heading depth to show in the table, from 1 to 3
 	},
 	favicon: [
-
 		{
-		src: '/favicon/icon.png',    // Path of the favicon, relative to the /public directory
-		//   theme: 'light',              // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
-		//   sizes: '32x32',              // (Optional) Size of the favicon, set only if you have favicons of different sizes
-		}
+			src: "/favicon/icon.png", // Path of the favicon, relative to the /public directory
+			//   theme: 'light',              // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
+			//   sizes: '32x32',              // (Optional) Size of the favicon, set only if you have favicons of different sizes
+		},
 	],
 };
 
@@ -87,4 +87,20 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 	// Note: Some styles (such as background color) are being overridden, see the astro.config.mjs file.
 	// Please select a dark theme, as this blog theme currently only supports dark background color
 	theme: "github-dark",
+};
+
+export const musicConfig: MusicConfig = {
+	enable: true,
+	songs: [
+		{
+			title: "Skyline Drift",
+			artist: "Lofi Beats",
+			url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3",
+		},
+		{
+			title: "Morning Mist",
+			artist: "Ambient Chill",
+			url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+		},
+	],
 };

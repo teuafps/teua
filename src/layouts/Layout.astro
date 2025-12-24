@@ -6,7 +6,7 @@ import "@fontsource/ibm-plex-sans-jp/700.css";
 import ConfigCarrier from "@components/ConfigCarrier.astro";
 import MusicPlayer from "@components/misc/MusicPlayer.astro";
 import Particles from "@components/misc/Particles.astro";
-import { profileConfig, siteConfig } from "@/config";
+import { musicConfig, profileConfig, siteConfig } from "@/config";
 import {
 	AUTO_MODE,
 	BANNER_HEIGHT,
@@ -154,7 +154,7 @@ const bannerOffset =
 		  data-overlayscrollbars-initialize
 	>
 		<Particles />
-		<MusicPlayer />
+		{musicConfig.enable && <MusicPlayer />}
 		<ConfigCarrier></ConfigCarrier>
 		<slot />
 
