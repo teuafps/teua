@@ -95,7 +95,7 @@ export const musicConfig: MusicConfig = {
 		{
 			title: "3:03 PM",
 			artist: "しゃろう",
-			url: "/music/303PM_230312.wav",
+			url: "/music/303PM_230312.mp3",
 		},
 	],
 };
