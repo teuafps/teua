@@ -10,7 +10,7 @@ import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
 	title: "teua.tuds.jp",
-	subtitle: "てうあのきらきらブログへようこそ！ 🌱",
+	subtitle: "てうあの個人ブログへようこそ！",
 	lang: "ja", // Language code, e.g. 'en', 'zh_CN', 'ja', etc.
 	themeColor: {
 		hue: 145, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
@@ -55,7 +55,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: "てうあ / Teua",
-	bio: "生粋のゲーマーです。TeuaUDServerという都市開発鯖を運営しています！  ",
+	bio: "生粋のゲーマーです。TwitchでVALORANTやマイクラの配信などもしてます！  ",
 	links: [
 		{
 			name: "X (Twitter)",
