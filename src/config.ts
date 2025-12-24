@@ -91,6 +91,7 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 
 export const musicConfig: MusicConfig = {
 	enable: true,
+	defaultVolume: 0.1,
 	songs: [
 		{
 			title: "3:03 PM",

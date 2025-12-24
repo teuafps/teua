@@ -110,4 +110,5 @@ export type MusicItem = {
 export type MusicConfig = {
 	enable: boolean;
 	songs: MusicItem[];
+	defaultVolume?: number;
 };

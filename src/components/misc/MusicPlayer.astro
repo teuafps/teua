@@ -28,7 +28,7 @@ import { musicConfig } from "../../config";
             <span id="music-artist" class="text-[10px] text-50 mb-1">Artist</span>
             <div class="flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 text-50" viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>
-                <input id="volume-slider" type="range" min="0" max="1" step="0.01" value="0.5" class="w-24 h-1 bg-[var(--primary)]/20 rounded-lg appearance-none cursor-pointer accent-[var(--primary)]">
+                <input id="volume-slider" type="range" min="0" max="1" step="0.01" value={musicConfig.defaultVolume ?? 0.5} class="w-24 h-1 bg-[var(--primary)]/20 rounded-lg appearance-none cursor-pointer accent-[var(--primary)]">
             </div>
         </div>
     </div>
@@ -109,6 +109,6 @@ import { musicConfig } from "../../config";
 
         // Initialize
         loadSong(currentIdx);
-        audio.volume = volumeSlider.value;
+        audio.volume = musicConfig.defaultVolume ?? volumeSlider.value;
     })();
 </script>
