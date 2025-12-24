@@ -1,0 +1,93 @@
+<div id="music-player" class="fixed bottom-6 left-6 z-[100] onload-animation hidden md:block">
+    <div class="card-base p-3 flex items-center gap-4 shadow-2xl backdrop-blur-md bg-white/70 dark:bg-black/70 border border-white/20">
+        <div class="relative group">
+            <div id="music-disk" class="w-12 h-12 rounded-full bg-[var(--primary)] flex items-center justify-center overflow-hidden transition-all duration-500 animate-spin-slow pause-spin shadow-lg">
+                <div class="w-4 h-4 rounded-full bg-white dark:bg-black z-10 border-2 border-[var(--primary)]"></div>
+            </div>
+            <button id="music-toggle" class="absolute inset-0 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity bg-black/20 rounded-full">
+                <svg id="play-icon" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                <svg id="pause-icon" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 hidden" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+            </button>
+        </div>
+        
+        <div class="flex flex-col min-w-[120px]">
+            <span id="music-title" class="text-xs font-bold text-90 truncate max-w-[150px]">Lofi Chill Beats</span>
+            <span id="music-artist" class="text-[10px] text-50">Background Music</span>
+            <div class="flex items-center gap-2 mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 text-50" viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                <input id="volume-slider" type="range" min="0" max="1" step="0.01" value="0.5" class="w-20 h-1 bg-[var(--primary)]/20 rounded-lg appearance-none cursor-pointer accent-[var(--primary)]">
+            </div>
+        </div>
+    </div>
+    
+    <audio id="bg-audio" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+<style>
+    .animate-spin-slow {
+        animation: spin 8s linear infinite;
+    }
+    .pause-spin {
+        animation-play-state: paused;
+    }
+    @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+    input[type='range']::-webkit-slider-runnable-track {
+        height: 4px;
+    }
+    input[type='range']::-webkit-slider-thumb {
+        margin-top: -6px;
+    }
+</style>
+
+<script is:inline>
+    (function() {
+        const player = document.getElementById('music-player');
+        const audio = document.getElementById('bg-audio');
+        const toggle = document.getElementById('music-toggle');
+        const playIcon = document.getElementById('play-icon');
+        const pauseIcon = document.getElementById('pause-icon');
+        const disk = document.getElementById('music-disk');
+        const volumeSlider = document.getElementById('volume-slider');
+        const musicTitle = document.getElementById('music-title');
+
+        if (!audio || !toggle) return;
+
+        // SoundHelix has multiple songs, let's pick one for demo
+        const songs = [
+            { title: "Skyline Drift", artist: "Lofi Beats", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" },
+            { title: "Morning Mist", artist: "Ambient Chill", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" }
+        ];
+        const currentSong = songs[Math.floor(Math.random() * songs.length)];
+        audio.src = currentSong.url;
+        musicTitle.textContent = currentSong.title;
+
+        let isPlaying = false;
+
+        toggle.addEventListener('click', () => {
+            if (isPlaying) {
+                audio.pause();
+                playIcon.classList.remove('hidden');
+                pauseIcon.classList.add('hidden');
+                disk.classList.add('pause-spin');
+            } else {
+                audio.play().catch(e => console.log("User interaction required for audio"));
+                playIcon.classList.add('hidden');
+                pauseIcon.classList.remove('hidden');
+                disk.classList.remove('pause-spin');
+            }
+            isPlaying = !isPlaying;
+        });
+
+        volumeSlider.addEventListener('input', (e) => {
+            audio.volume = e.target.value;
+        });
+
+        // Initialize volume
+        audio.volume = volumeSlider.value;
+    })();
+</script>
