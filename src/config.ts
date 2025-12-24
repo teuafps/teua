@@ -93,14 +93,9 @@ export const musicConfig: MusicConfig = {
 	enable: true,
 	songs: [
 		{
-			title: "Skyline Drift",
-			artist: "Lofi Beats",
-			url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3",
-		},
-		{
-			title: "Morning Mist",
-			artist: "Ambient Chill",
-			url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+			title: "3:03 PM",
+			artist: "しゃろう",
+			url: "/music/303PM_230312.wav",
 		},
 	],
 };
