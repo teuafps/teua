@@ -1,7 +1,7 @@
 ---
-import '@fontsource/ibm-plex-sans-jp/400.css'
-import '@fontsource/ibm-plex-sans-jp/500.css'
-import '@fontsource/ibm-plex-sans-jp/700.css'
+import "@fontsource/ibm-plex-sans-jp/400.css";
+import "@fontsource/ibm-plex-sans-jp/500.css";
+import "@fontsource/ibm-plex-sans-jp/700.css";
 
 import ConfigCarrier from "@components/ConfigCarrier.astro";
 import { profileConfig, siteConfig } from "@/config";
@@ -148,7 +148,7 @@ const bannerOffset =
 		<link rel="alternate" type="application/rss+xml" title={profileConfig.name} href={`${Astro.site}rss.xml`}/>
 
 	</head>
-	<body class=" min-h-screen transition bg-[radial-gradient(var(--primary)_1px,transparent_1px)] [background-size:20px_20px] [background-attachment:fixed] opacity-[0.8] " class:list={[{"lg:is-home": isHomePage, "enable-banner": enableBanner}]}
+	<body class=" min-h-screen transition bg-[radial-gradient(oklch(0.75_0.12_var(--hue)_/_0.1)_1px,transparent_1px)] [background-size:20px_20px] [background-attachment:fixed]" class:list={[{"lg:is-home": isHomePage, "enable-banner": enableBanner}]}
 		  data-overlayscrollbars-initialize
 	>
 		<ConfigCarrier></ConfigCarrier>

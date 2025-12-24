@@ -3,9 +3,10 @@
 @layer components {
     .card-base {
         @apply rounded-[var(--radius-large)] overflow-hidden bg-[var(--card-bg)] transition-all duration-300;
-        @apply shadow-lg shadow-[var(--primary)]/5;
+        box-shadow: 0 10px 15px -3px oklch(0.75 0.12 var(--hue) / 0.05), 0 4px 6px -4px oklch(0.75 0.12 var(--hue) / 0.05);
         &:hover {
-            @apply -translate-y-1 scale-[1.01] shadow-xl shadow-[var(--primary)]/20;
+            @apply -translate-y-1 scale-[1.01];
+            box-shadow: 0 20px 25px -5px oklch(0.75 0.12 var(--hue) / 0.15), 0 8px 10px -6px oklch(0.75 0.12 var(--hue) / 0.15);
         }
     }
     h1, h2, h3, h4, h5, h6, p, a, span, li, ul, ol, blockquote, code, pre, table, th, td, strong {
